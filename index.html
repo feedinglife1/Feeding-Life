@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeding Life</title>
+    <!-- Enlaza tus archivos CSS aquí si los tienes -->
+    <link rel="stylesheet" href="estilo.css">
+    <title>Encabezado responsive</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="FL LOGO.png" alt="Logo Feeding Life">
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="noticias.html" class="nav-link">NOTICIAS</a>
+            <a href="soporte.html" class="nav-link">SOPORTE</a>
+        </nav>
+    </header>
+    <div id="INICIO">
+        <!-- Contenido específico de la sección de inicio aquí -->
+            <h1>Bienvenido a Feeding Life, donde plantamos juntos la semilla para cosechar un mejor futuro.</h1> 
+            <h2>¡Entérate de todo lo nuevo!</h2> 
+    </div>
+
+   <div class="notas">
+    <div id="nota1">
+        <img src="fondo-notas.png" alt="Notas" style="width: 300px; height: 200px;">
+        <h1>
+            Incendio en Manrique.
+        </h1>
+        <p>
+            El pasado miércoles en<br>
+            la zona de la cruz se<br>
+            alborotó el incendio forestal.
+        </p>
+        <button style="width: 80px; height: 30px;">
+            <a href="noticias.html" style="color: white;">VER MÁS</a>
+        </button>
+        
+    </div>
+
+    <div id="nota2">
+        <img src="fondo-notas.png" alt="Notas" style="width: 300px; height: 200px;">
+        <h1>
+            La Gabriel se<br>toma las huertas.
+        </h1>
+        <p>
+            Gracias a la iniciativa<br>
+            del reto Cero Hambre<br>
+            los estudiantes hicieron<br>
+            una huerta en el colegio.
+        </p>
+        <button style="width: 80px; height: 30px;">
+            <a href="noticias.html" style="color: white;">VER MÁS</a>
+        </button>
+    </div>
+
+    <div id="nota3">
+        <img src="fondo-notas.png" alt="Notas" style="width: 300px; height: 200px;">
+        <h1>
+            La contenerización <br>
+            en Medellín
+        </h1>    
+        <p>
+            Emvarias tomó la iniciativa<br>
+            de repartir contenedores <br>
+            en todo Medellín.
+        </p>
+        <button style="width: 80px; height: 30px;">
+            <a href="noticias.html" style="color: white;">VER MÁS</a>
+        </button>
+    </div>
+
+    <div id="nota4">
+        <img src="fondo-notas.png" alt="Notas" style="width: 300px; height: 200px;">
+        <h1>
+            La movilidad <br> y la atmosfera.
+        </h1>
+        <p>
+            La Secretaría de Movilidad<br> le apuesta directamente<br> a la reducción de<br> contaminación atmosférica.
+        </p>
+        <button style="width: 80px; height: 30px;">
+            <a href="noticias.html" style="color: white;">VER MÁS</a>
+        </button>
+    </div>
+
+   </div>
+
+   <div class="bot">
+    <!-- Load WebChat -->            <style>                #wc-childimg {                    position: fixed;                    bottom: 5%;                    right: 41%;                    z-index: 999999;                    cursor: pointer;                }                #wc-childimg>img {                    display: none;                    cursor: pointer; width: 45%; height: 65%;              }                #wc-close {                    display: none;                    position: fixed;                    right: calc(2.3%);                    bottom: calc(-1.2% + 490px);                    cursor: pointer;                    font-size: 18px;                    font-weight: 500;                    z-index: 1000001;                }                #wc-close-button {                    width: 18px;                    height: 18px;                }                #wc-default-icon {                    font-size: 50px;                    color: #20C997;                }                .wc-frame-content {                    right: 3vw;                    bottom: 1vh;                    border: none;                    border-radius: 1.3em;                    box-shadow: 0 1pt 12pt rgba(0, 0, 0, 0.20);                    height: 0;                    width: 360px;                    position: fixed;                    z-index: 1000000;                    vertical-align: bottom;                    transition: height 0.5s;                }                .wc-frame-content-open {                    height: 480px;                }                .fa.fa-times-circle {                    background-color: white;                    border-radius: 50%;                }                @media only screen and (max-height: 550px) {                    .wc-frame-content-open {                        height: 75vh;                    }                    #wc-close {                        bottom: calc(-1.2% + 75vh);                    }                }            </style>            <div class="wc-root-show">            <span id="wc-close">                <i class="fa fa-times-circle"></i>            </span>            <div id="wc-childimg">                <img src="https://ibangblob.blob.core.windows.net/prod-platform/2029-46d9d55c-7d56-43ca-861d-4205fa776d82.png" width="50px" height="50px" />            </div>            <div id="wc-frame-show" class="wc-show">                <iframe id="ifrmBotBotzy" scrolling="no" class="wc-frame-content" allow="geolocation; microphone"></iframe>            </div>            <script>                var initHeight = 480;                var iframeLoaded = false;                function onLoadWebChat() {                    var imgElement = document.getElementById("wc-childimg").children[0];                    imgElement.style.display = "block";                }                window.addEventListener("load", function () {                    var imgElement = document.getElementById("wc-childimg");                    var closeElement = document.getElementById("wc-close");                    imgElement.addEventListener("click", showFrame);                    closeElement.addEventListener("click", hideFrame);                    addStyleShett('https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css');                    addStyleShett('https://use.fontawesome.com/releases/v5.6.3/css/regular.css');                    addStyleShett('https://use.fontawesome.com/releases/v5.6.3/css/solid.css');                    setTimeout(function(){ var imgElement = document.getElementById("wc-childimg"); imgElement.click(); }, 2000);                    onLoadWebChat();                });                function addStyleShett(url) {                    var head = document.getElementsByTagName('HEAD')[0];                    let link = document.createElement('link');                    link.rel = 'stylesheet';                    link.type = 'text/css';                    link.href = url;                    head.appendChild(link);                }                function showFrame() {                    if(!iframeLoaded)                    {                      var iframeBot = document.getElementById("ifrmBotBotzy");                      var date = Date.now();                      iframeBot.setAttribute("src","https://ibang-webviews.ibang.ai/chats/webchat?t=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDI5IiwibmFtZWlkIjoiMjAyOSIsImtleSI6Ik9TeHhjT0p5RlZhd1hYRTB6Z0xmNkE9PSIsImp0aSI6ImRiYmExYWY3LTBjMTMtNDdmNy05NjJmLTE1M2M2MzU3ZmNkNiIsImlhdCI6MTY5MzA4NDgwNiwicm9sIjoid2ViX2FjY2VzcyIsImlkIjoiMjAyOSIsIm5iZiI6MTY5MzA4NDgwNSwiZXhwIjoxNjkzMDkyMDA1LCJpc3MiOiJ3ZWJBcGkiLCJhdWQiOiJ3ZWJBcGkifQ.OKDwVqF_aeRsryfmubMyHiRXeF4o3UyiIrzEHKy_moM&d=" + date);                      iframeLoaded = true;                    }                    var frameElement = document.getElementById("wc-frame-show");                    var closeElement = document.getElementById("wc-close");                    var frameContent = frameElement.getElementsByClassName("wc-frame-content")[0];                    frameContent.classList.add("wc-frame-content-open");                    setTimeout(function(){ closeElement.style.display = "block"; }, 1000);                }                function hideFrame() {                    var frameElement = document.getElementById("wc-frame-show");                    var closeElement = document.getElementById("wc-close");                    closeElement.style.display = "none";                    var frameContent = frameElement.getElementsByClassName("wc-frame-content")[0];                    frameContent.classList.remove("wc-frame-content-open");                }            </script>        </div>
+   </div>
+
+  
+</body>
+</html>
